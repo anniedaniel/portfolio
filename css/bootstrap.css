@@ -304,7 +304,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #FFFAEA;
 }
 
 input,
@@ -4373,8 +4373,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #E8D5CA;
+/*  border-color: #e7e7e7;*/
 }
 
 .navbar-default .navbar-brand {
@@ -4923,12 +4923,13 @@ a.list-group-item.active > .badge,
   font-weight: 200;
   line-height: 2.1428571435;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: #E8D6CA;
+  border: 1px dotted #DEFFE3;
 }
 
 .jumbotron h1 {
   line-height: 1;
-  color: inherit;
+  color: #FF0F3E;
 }
 
 .jumbotron p {
