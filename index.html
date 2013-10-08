@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -12,7 +13,9 @@
     <title>Annie Daniel</title>
 
     <!-- Bootstrap core CSS -->
+    
     <link href="css/bootstrap.css" rel="stylesheet">
+<!--     <link href="js/windows/css/main.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
    <!-- <link href="navbar-fixed-top.css" rel="stylesheet">-->
@@ -27,7 +30,7 @@
   <body>
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
+<!--     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Annie Daniel</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -43,19 +46,26 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+        </div><!/.nav-collapse -->
+      <!--</div>
+    </div> -->
 
-    <div class="container">
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>About</h1>
+    <section id="0" class="window">
+    <div class="container" >
+        <h1>Welcome to my portfolio</h1>
         <div class="row">
           <div class="col-md-2">
-        <img src="img/annie.gif" alt="..." height="100px" class="img-circle">
+        <img src="img/annie.gif" alt="..." height="100px" style="padding-bottom: 10px" class="img-circle">
           </div>
+        </div>
+    </div><!--container-->
+  </section>
+  
+
+   <section id="1" class="window">
+    <div class="container">
+        <h1>About</h1>
+        <div class="row">
           <div class="col-md-8">
         <p>My name is Annie Daniel and I love the Internet.</p>
         <p>I am a student at The University of North Carolina at Chapel Hill's School of Journalism and Mass Communication studying multimedia journalism. I also have a second major in political science.</p>
@@ -64,38 +74,98 @@
         <p>I am an advocate for hacker journalists in every newsroom who are able to build beautiful web spaces while remaining conscious of the ethics and principles of journalism as an acting member of the press. I am also an advocate of government transparency and accessibility of data, resources and government activities.</p>
         </div>
       </div>
+    </div><!--container-->
+  </section>
 
-      </div>
 
-        <div class="jumbotron">
+
+  <section id="2" class="window">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
         <h1>Projects</h1>
+      </div><!--col-->
+    </div><!--row-->
+    <div class="row">
+      <div class="col-md-12">
         <p>I work on stuff sometimes. Here's what they looks like.</p>
-        <p><a href="http://www.annie-daniel.com/static/coachella"><img src="img/coachella.png" alt="..." height="200px" class="img-square"></a></p>
-        <hr />
-        <p><img src="img/nslp.png" alt="..." height="200px" class="img-square"></p>
-        <hr />
-        <p><img src="img/sopa.png" alt="..." height="200px" class="img-square"></p>
-        <hr />
-
       </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <p><a href="http://www.annie-daniel.com/static/coachella"><img src="img/coachella.png" alt="..." style="border: 1px solid black" height="200px" class="img-square"></a></p>
+      </div>
+    </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-3">
+        <img src="img/nslp.png" alt="National School Lunch Program data-driven dashboard" style="border: 1px solid black" height="200px" class="img-square">
+      </div>
+    </div>
+        <hr />
+    <div class="row">
+      <div class="col-md-3">
+        <img src="img/sopa.png" alt="SOPA javascript slideshow" style="border: 1px solid black" height="200px" class="img-square">
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="jumbotron">
+
+  <section id="3" class="window">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6">
         <h1>Contact</h1>
-          <p>Email me at anniedaniel001 at gmail dot com</p>
-          <p>Tweet at me @anieldaniel</p>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Email me at anniedaniel001 at gmail dot com</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Tweet at me @anieldaniel</p>
+      </div><!--col-->
+    </div><!--row-->
+  </div><!--container-->
+</section>
 
-      <div class="jumbotron">
+<section id="4" class="window">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6">
         <h1>Resume</h1>
-      </div>
+      </div><!--col-->
+    </div><!--row-->
+  </div><!--container-->
+</section>
 
-      </div> <!-- /container -->
+    <!--</div> <! /container -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    
+     <script>
+
+            $(document).ready(function(){
+
+                var $windows = $('.window');
+
+                $windows.windows({
+                    snapping: true,
+                    snapSpeed: 500,
+                    snapInterval: 1100,
+                    onScroll: function(s){},
+                    onSnapComplete: function($el){},
+                    onWindowEnter: function($el){}
+                });
+
+            });
+        </script>
+        <script src="js/windows/js/jquery.windows.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
