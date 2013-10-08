@@ -16,7 +16,12 @@
   src: url(../fonts/Pacifico.ttf);
 }
 
-/*WINDOW PLUGIN*/
+@font-face{
+  font-family: basic;
+  src: url(../fonts/basictitlefont.ttf);
+}
+
+/*-----------------------------WINDOW PLUGIN----------------------------*/
 .window {
   width: 100%;
   height: 100%;
@@ -29,17 +34,47 @@
   background-color: #777;
 }
 
+.window:nth-child(1) h1 {
+  color: #FF638C;
+  font-size: 500%;
+}
+
+.window:nth-child(1) h3 {
+  font-family: basic;
+  color: #fff;
+  font-size: 40pt;
+}
+
 /* line 18, ../scss/main.scss */
 .window:nth-child(2) {
   top: 100%;
   background-color: #aaa;
+  color: #fff;
 }
 
+.window:nth-child(2) h1 {
+  color: #FF638C;
+  font-size: 500%;
+}
+
+.window:nth-child(2) p {
+  font-family: ;
+}
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(3) {
   top: 200%;
   background-color: #ddd;
+}
+
+.window:nth-child(3) h1 {
+  color: #FF638C;
+  font-size: 500%;
+}
+
+.window:nth-child(3) h3 {
+  font-size: 200%;
+  font-family: basic;
 }
 
 /* line 18, ../scss/main.scss */
@@ -48,9 +83,25 @@
   background-color: #555;
 }
 
+.window:nth-child(4) h1 {
+  color: #FF638C;
+  font-size: 500%;
+}
+
+.window:nth-child(4) h3 {
+  font-size: 200%;
+  font-family: basic;
+  color: #fff;
+}
+
 /* line 18, ../scss/main.scss */
 .window:nth-child(5) {
   top: 400%;
+}
+
+.window:nth-child(5) h1 {
+  color: #FF638C;
+  font-size: 500%;
 }
 
 /* line 18, ../scss/main.scss */
@@ -58,13 +109,11 @@
   top: 500%;
 }
 
-.window:nth-child(6) .content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -100px 0 0 -100px;
-  text-align: center;
+.window:nth-child(6) h1 {
+  color: #FF0F3E;
 }
+
+/*--------------------------------------------------------------*/
 
 
 article,
@@ -4431,6 +4480,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-default {
   background-color: #E8D5CA;
+  display : table-row;
+    vertical-align : bottom;
+    height : 1px;
+  ;
 /*  border-color: #e7e7e7;*/
 }
 
