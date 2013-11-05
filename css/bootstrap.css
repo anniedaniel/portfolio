@@ -25,13 +25,14 @@
 .home{
   background-color: #666;
   color: #FFF;
-  padding: 20px;
+  padding: 50px 20px 70px 20px;
 }
 
 .about{
   background-color: #444;
   color: #eee;
   padding: 20px;
+  font-weight: thin;
 }
 
 .projects{
@@ -4421,7 +4422,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #E8D5CA;
+  background-color: #666;
   display : table-row;
     vertical-align : bottom;
     height : 1px;

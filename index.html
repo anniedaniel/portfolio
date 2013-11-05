@@ -29,11 +29,32 @@
 
   <body>
 
+      <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 
 
 <div class="home">
   <div class="container" >
     
+<!--HOME-->
+
     <a id="home"></a>  
         <div class="row">
           <div class="col-md-2">
@@ -55,13 +76,8 @@
       </div>
     </div>
   </div>
-      <!-- <ul class="nav nav-pills" style="margin-top: 40%; float: right">
-      <li class="active"><a href="#top">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#resume">Resume</a></li>
-    </ul> -->
+
+  <!--ABOUT-->
 
   <div class="about">
     <div class="container">
@@ -80,18 +96,10 @@
       </div>
     </div>
   </div>
-      <!-- <ul class="nav nav-pills" style="margin-top: 40%; float: right">
-      <li class="active"><a href="#top">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#resume">Resume</a></li>
-    </ul> -->
 
 
 
-
-<!--div the pictures into their own box that can be scrolled so it'll fit into its own box-->
+<!--PROJECTS-->
 
 
   <div class="projects">
@@ -113,22 +121,98 @@
         <div class="col-md-3">
           <a href="http://newsroom13.journalists.org/apps/music/" target="_blank"><img src="img/ona13_hearATL.png" alt="ONAmusic" style="border: 1px solid black" height="200px" class="img-square"></a>
         </div><!--col-->
-      <div class="col-md-offset-4">
+
+        <!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
         <a href="http://newsroom13.journalists.org/apps/music/"><h3>ONA music</h3></a>
           <p>I was a participant of the Online News Association Conference and Banquet Student Newsroom where I was tasked with creating content and providing coverage throughout the conference. I was able to work with professionals from the field to create this interactive package. I was assigned with Atlanta music, and included concerts that weekend, maps, restaurants close to the venues and a video player to sample tracks from the performing artists.</p>
-        </div><!--col-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
       </div><!--row-->
     </div><!--portfolio-item-->
+
+    <div class="portfolio-item">
+      <div class="row">
+        <div class="col-md-3">
+          <a href="http://reesenewslab.org/projects/capitolhound/" target="_blank"><img src="img/capitolhound.png" alt="National School Lunch Program data-driven dashboard" style="border: 1px solid black" width="200px" class="img-square"></a>
+        </div>
+
+        <!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <a href="http://reesenewslab.org/projects/capitolhound/"><h3>Capitol Hound</h3></a>
+            <p>For Summer, 2013, I was hired along with a group of seven other students to work in UNC's Reese Felts Digital News Lab housed in UNC's School of Journalism and Mass Communication. We were tasked with creating two, financially self-sustaining startup news products. I was the lead developer in creating Capitol Hound- a searchable audio index for the North Carolina state legislature. <a href="http://reesenewslab.org/projects/capitolhound/">Click here</a> to read our <a href="http://reesenewslab.org/files/2013/08/capitolhoundBizFINAL.pdf">business plan</a>, <a href="http://reesenewslab.org/files/2013/08/capitolhoundMarketingFINAL.pdf">marketing plan</a> and view our <a href="http://ncgaproto.reesenewslab.org/proto_03/">prototype</a> to learn more.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+        </div><!--row-->
+      </div><!--portfolio item-->
 
     <div class="portfolio-item">
      <div class="row">
           <div class="col-md-3">
             <a href="http://www.annie-daniel.com/static/NSLP" target="_blank"><img src="img/nslp.png" alt="National School Lunch Program data-driven dashboard" style="border: 1px solid black" height="200px" class="img-square"></a>
             </div><!--col-->
-            <div class="col-md-offset-4">
-              <a href="http://www.annie-daniel.com/static/NSLP"><h3>NSLP</h3></a>
+
+          <!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <a href="http://www.annie-daniel.com/static/NSLP"><h3>NSLP</h3></a>
               <p>This is a data-driven dashboard for the Natolnal School Lunch Program. I used highcharts to create interactive charts to illustrate how NSLP funding is spent across the U.S..</p>
-            </div><!--col-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
       </div><!--row-->
     </div><!--portfolio-item-->
 
@@ -137,24 +221,33 @@
         <div class="col-md-3">
           <a href="http://www.annie-daniel.com/static/coachella" target="_blank"><img src="img/coachella.png" alt="..." style="border: 1px solid black" height="200px" class="img-square"></a>
         </div><!--col-->
-        <div class="col-md-offset-4">
-          <a href="http://www.annie-daniel.com/static/coachella"><h3>Coachella</h3></a>
+
+        <!-- Button trigger modal -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        a href="http://www.annie-daniel.com/static/coachella"><h3>Coachella</h3></a>
           <p>Thos is a dashboard for the Coachella Valley Music and Arts Festival.</p>
-        </div><!--col-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
       </div><!--row-->
     </div><!--portfolio-item-->
-    
-    <div class="portfolio-item">
-      <div class="row">
-        <div class="col-md-3">
-          <a href="http://www.annie-daniel.com/static/sopa" target="_blank"><img src="img/sopa.png" alt="SOPA javascript slideshow" style="border: 1px solid black" height="200px" class="img-square"></a>
-      </div><!--col-->
-      <div class="col-md-offset-4">
-        <a href="http://www.annie-daniel.com/static/sopa" target="_blank"><h3>SOPA</h3></a>
-        <p>This is a javascripr slider that explains SOPA. This project served as my intro to jQuery plugins.</p>
-    </div><!--col-->
-  </div><!--row-->
-</div><!--portfolio-item-->
 </div><!--container-->
 </div><!--projects-->
 
@@ -182,12 +275,12 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-        <a href="https://twitter.com/anieldaniel"><h3><i class="icon-twitter-sign"></i></a> <a href="https://twitter.com/anieldaniel" target="_blank">anieldaniel</a></h3>
+        <a href="https://twitter.com/anieldaniel" target="_blank"><h3><i class="icon-twitter-sign"></i></a> <a href="https://twitter.com/anieldaniel" target="_blank">anieldaniel</a></h3>
       </div><!--col-->
     </div><!--row-->
     <div class="row">
       <div class="col-md-6">
-        <a href="http://www.github.com/anniedaniel" target="_blank"><h3>github.com/anniedaniel</h3></a>
+        <a href="http://www.github.com/anniedaniel" target="_blank"><h3><span class="icon-github"></span></a><a href="http://www.github.com/anniedaniel" target="_blank"> github.com/anniedaniel</h3></a>
       </div><!--col-->
     </div><!--row-->
   </div><!--container-->
