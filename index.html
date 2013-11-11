@@ -17,6 +17,21 @@
     <!-- <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
+    <!--analytics-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){
+        i['GoogleAnalyticsObject']=r;
+        i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-45481046-1', 'annie-daniel.com');
+      ga('send', 'pageview');
+
+    </script>
+
     <!-- Custom styles for this template -->
    <!-- <link href="navbar-fixed-top.css" rel="stylesheet">-->
 
@@ -29,7 +44,7 @@
 
   <body>
 
-    <div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,13 +52,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Project name</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="../navbar/">Default</a></li>
-          <li><a href="../navbar-static-top/">Static top</a></li>
-          <li class="active"><a href="./">Fixed top</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -51,22 +67,18 @@
 
   <!--HOME-->
 
-
+  <a id="home"></a>
   <div class="home">
     <div class="container" >
-      <a id="home"></a>  
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Hi, my name is Annie...</h3>
-          </div><!--col-->
-        </div><!--row-->
-        <div class="row">
-          <div class="col-md=10">
-            <h1>Welcome to my portfolio.</h1><br />
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Hi, my name is Annie...</h3>
         </div><!--col-->
       </div><!--row-->
       <div class="row">
-        <h4 style="font-family:basic; color:white;">Under Construction</h4>
+        <div class="col-md=10">
+          <h1>Welcome to my portfolio.</h1><br />
+        </div><!--col-->
       </div><!--row-->
     </div><!--container-->
   </div><!--home-->
@@ -76,19 +88,18 @@
   <!--ABOUT-->
 
 
-
-  <div class="about">
-    <div class="container">
-    <a id="about"></a>
+   <a id="about"></a>
+    <div class="about">
+      <div class="container">
         <h1>About</h1>
         <div class="row">
           <div class="col-md-8">
         <h3>My name is Annie Daniel, and I love the Internet.</h3>
         <p>I am a student at The University of North Carolina at Chapel Hill's School of Journalism and Mass Communication studying multimedia journalism. I also have a second major in political science.</p>
-        <p>As a journalist, I'm always looking for the best way to tell a story. As a data journalist, I love to dig out the story out of the numbers and bring it to life.</p>
+        <p>As a journalist, I'm always looking for the best way to tell a story. As a data journalist, I love to dig the story out of the numbers and bring it to life.</p>
         <p>I am not an "idea person". As a web developer I love to build, create and execute pieces that are self-explanatory and serve a purpose.</p>
-        <p>I am an advocate for hacker journalists in every newsroom who are able to build beautiful web spaces while remaining conscious of the ethics and principles of journalism. I am also an advocate of government transparency and accessibility of data, resources and government activities.</p>
-        <p>Believe it or not, I'm not just a code monkey who builds cool things on the Internet. I'm mostly a suburban North Carolina girl who loves Krispy Kreme and "This American Life".</p>
+        <p>I am an advocate for hacker journalists in every newsroom who are able to build beautiful web spaces while remaining conscious of the ethics and principles of journalism. Everyone should be able to make great interactives, not just the people in the digital department. I am also an advocate for government transparency and accessibility of data, resources and government activities.</p>
+        <p>Believe it or not, I'm not just a code monkey who builds cool things on the Internet. I'm mostly a suburban North Carolina girl who loves Krispy Kreme, all things UNC and <i>This American Life</i>.</p>
         <p>Check out my stuff! Tell me what you think.</p>
         </div><!--col-->
       </div><!--row-->
@@ -99,10 +110,9 @@
 
 <!--PROJECTS-->
 
-
-<div class="projects">
-  <div class="container">
-    <a id="projects"></a>
+ <a id="projects"></a>
+  <div class="projects">
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
           <h1>Projects</h1>
@@ -113,32 +123,30 @@
         <h3>a few of my most recent projects</h3>
       </div><!--col-->
     </div><!--row-->
+    <div class="col-md-12">
+      <h4>Click the buttons below the projects to learn more.</h4>
+    </div>
 
     
 
     <div class="portfolio-item">
-      <a href="http://newsroom13.journalists.org/apps/music/" target="_blank"><img src="img/ona13_hearATL.png" alt="ONAmusic" style="border: 1px solid black" height="150px" class="img-square"></a>
+      <a href="http://newsroom13.journalists.org/apps/music/" target="_blank"><img src="img/ona13_hearATL.png" alt="ONAmusic" style="border: 1px solid black" height="160px" class="img-square"></a>
         <br />
         <!-- Button trigger modal -->
-        <button data-toggle="modal" data-target="#myModal">
+        <button data-toggle="modal" class="portfolio" data-target="#onamusic">
         ONAmusic
         </button>
 
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="onamusic" tabindex="-1" role="dialog" aria-labelledby="onamusicLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <h3 class="modal-title" id="onamusicLabel"><a href="http://newsroom13.journalists.org/apps/music/">ONAmusic</a></h3>
               </div>
               <div class="modal-body">
-                <a href="http://newsroom13.journalists.org/apps/music/"><h3>ONA music</h3></a>
-                  <p>I was a participant of the Online News Association Conference and Banquet Student Newsroom where I was tasked with creating content and providing coverage throughout the conference. I was able to work with professionals from the field to create this interactive package. I was assigned with Atlanta music, and included concerts that weekend, maps, restaurants close to the venues and a video player to sample tracks from the performing artists.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                  <p>I was selected as a participant of the Online News Association Conference and Banquet Student Newsroom where I was tasked with creating content and providing coverage throughout the conference. I was able to work with other students as well as professionals from the field to create this interactive package. I was assigned with Atlanta music, and included concerts that weekend, maps, restaurants close to the venues and a video player to sample tracks from the performing artists. <a href="http://newsroom13.journalists.org/2013/10/19/how-i-built-a-news-app-for-ona13/">I even wrote a story about how I did it!</a> </p>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
@@ -147,83 +155,78 @@
     </div><!--portfolio-item-->
 
     <div class="portfolio-item">
-      <a href="http://reesenewslab.org/projects/capitolhound/" target="_blank"><img src="img/capitolhound.png" alt="National School Lunch Program data-driven dashboard" style="border: 1px solid black" height="150px" class="img-square"></a>
+      <a href="http://reesenewslab.org/projects/capitolhound/" target="_blank"><img src="img/capitolhound.png" alt="National School Lunch Program data-driven dashboard" style="border: 1px solid black" height="160px" class="img-square"></a>
         <br />
         <!-- Button trigger modal -->
-        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-        Launch demo modal
+        <button data-toggle="modal" class="portfolio" data-target="#capitolHound">
+        Capitol Hound
         </button>
 
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="capitolHound" tabindex="-1" role="dialog" aria-labelledby="capitolHoundLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title" id="myModalLabel"><a href="http://reesenewslab.org/projects/capitolhound/">Capitol Hound</a></h4>
+              <h3 class="modal-title" id="capitolHoundLabel"><a href="http://reesenewslab.org/projects/capitolhound/">Capitol Hound</a></h3>
             </div>
             <div class="modal-body">
-                  <p>For Summer, 2013, I was hired along with a group of seven other students to work in UNC's Reese Felts Digital News Lab housed in UNC's School of Journalism and Mass Communication. We were tasked with creating two, financially self-sustaining startup news products. I was the lead developer in creating Capitol Hound- a searchable audio index for the North Carolina state legislature. <a href="http://reesenewslab.org/projects/capitolhound/">Click here</a> to read our <a href="http://reesenewslab.org/files/2013/08/capitolhoundBizFINAL.pdf">business plan</a>, <a href="http://reesenewslab.org/files/2013/08/capitolhoundMarketingFINAL.pdf">marketing plan</a> and view our <a href="http://ncgaproto.reesenewslab.org/proto_03/">prototype</a> to learn more.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <p>For twelve weeks of summer, 2013, I was hired along with a group of seven other students to work in UNC's Reese Felts Digital News Lab housed in UNC's School of Journalism and Mass Communication. We were tasked with creating two, financially self-sustaining startup news products. I was the lead developer in creating Capitol Hound- a searchable audio index for the North Carolina state legislature. <a href="http://reesenewslab.org/projects/capitolhound/">Click here</a> to read our <a href="http://reesenewslab.org/files/2013/08/capitolhoundBizFINAL.pdf">business plan</a>, <a href="http://reesenewslab.org/files/2013/08/capitolhoundMarketingFINAL.pdf">marketing plan</a> and view our <a href="http://ncgaproto.reesenewslab.org/proto_03/">prototype</a> to learn more.</p>
             </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
       </div><!--portfolio item-->
 
+
+
+
     <div class="portfolio-item">
-      <a href="http://www.annie-daniel.com/static/NSLP" target="_blank"><img src="img/nslp.png" alt="National School Lunch Program data-driven dashboard" style="border: 1px solid black" height="150px" class="img-square"></a>
+      <a href="http://www.annie-daniel.com/static/NSLP" target="_blank"><img src="img/nslp.png" alt="National School Lunch Program data-driven dashboard" style="border: 1px solid black" height="160px" class="img-square"></a>
         <br />
           <!-- Button trigger modal -->
-        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-          Launch demo modal
+        <button data-toggle="modal" class="portfolio" data-target="#nslp">
+          N.S.L.P.
         </button>
 
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="nslp" tabindex="-1" role="dialog" aria-labelledby="nslpLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <h3 class="modal-title" id="nslpLabel"><a href="http://www.annie-daniel.com/static/NSLP">NSLP</a></h3>
               </div>
               <div class="modal-body">
-                <a href="http://www.annie-daniel.com/static/NSLP"><h3>NSLP</h3></a>
-                      <p>This is a data-driven dashboard for the Natolnal School Lunch Program. I used highcharts to create interactive charts to illustrate how NSLP funding is spent across the U.S..</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <p>This is a data-driven dashboard for the National School Lunch Program. I used highcharts to create interactive charts to illustrate how N.S.L.P. funding is spent across the U.S..</p>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
     </div><!--portfolio-item-->
 
+
+
+
     <div class="portfolio-item">
-      <a href="http://www.annie-daniel.com/static/coachella" target="_blank"><img src="img/coachella.png" alt="..." style="border: 1px solid black" height="150px" class="img-square"></a>
+      <a href="http://www.annie-daniel.com/static/coachella" target="_blank"><img src="img/coachella.png" alt="..." style="border: 1px solid black" height="160px" class="img-square"></a>
         <br />
         <!-- Button trigger modal -->
-        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-          Launch demo modal
+        <button data-toggle="modal" class="portfolio" data-target="#coachella">
+          Coachella
         </button>
 
         <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="coachella" tabindex="-1" role="dialog" aria-labelledby="coachellaLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <h3 class="modal-title" id="coachellaLabel"><a href="http://www.annie-daniel.com/static/coachella">Coachella</a></h3>
               </div>
               <div class="modal-body">
-                a href="http://www.annie-daniel.com/static/coachella"><h3>Coachella</h3></a>
-                  <p>Thos is a dashboard for the Coachella Valley Music and Arts Festival.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                
+                  <p>This is a dashboard for the Coachella Valley Music and Arts Festival. I used multiple API's and jQuery plugins to illustrate the excitement and life of the festival. </p>
               </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
@@ -233,9 +236,9 @@
 </div><!--projects-->
 
 
+<a id="contact"></a>
   <div class="contact">
     <div class="container">
-    <a id="contact"></a>
     <div class="row">
       <div class="col-md-12">
         <h1>Contact</h1>
@@ -243,7 +246,7 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <h3><span class="glyphicon glyphicon-envelope"></span> anniedaniel001 at gmail dot com</h3>
+        <h3><a href="mailto:anniedaniel001@gmail.com?Subject=Hi%20Annie!" target="_top"><span class="glyphicon glyphicon-envelope"></span></a> <a href="mailto:anniedaniel001@gmail.com?Subject=Hi%20Annie!">anniedaniel001 at gmail dot com</a></h3>
       </div>
     </div>
     <div class="row">
@@ -259,20 +262,21 @@
   </div><!--container-->
 </div><!--contact-->
 
-<div class="resume">
-  <div class="container">
-  <a id="resume"></a>
-    <div class="row">
-      <div class="col-md-6">
-        <h1>Resume</h1>
-        <a href="img/resume2013_update.pdf" target="_blank"><h3>Download here!</h3></a>
-      </div><!--col-->
-    </div><!--row-->
-    <div id="pdf">
-  <img class="img-responsive" height="800px" src="img/annie_resume_10-28-13.png">
-</div><!--pdf-->
-</div><!--container-->
-</div><!--resume-->
+
+<a id="resume"></a>
+  <div class="resume">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Resume</h1>
+          <a href="img/resume2013_update.pdf" target="_blank"><h3>Download here!</h3></a>
+        </div><!--col-->
+      </div><!--row-->
+      <div id="pdf">
+        <img class="img-responsive"  width="700px" src="img/annie_resume_10-28-13.png">
+      </div><!--pdf-->
+    </div><!--container-->
+  </div><!--resume-->
 
 
     <!-- Bootstrap core JavaScript

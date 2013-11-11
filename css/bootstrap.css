@@ -31,33 +31,40 @@
 .about{
   background-color: #444;
   color: #eee;
-  padding: 20px;
+  padding: 50px 20px 70px 20px;
   font-weight: thin;
 }
 
 .projects{
   background-color: #ccc;
   color: #000;
-  padding: 20px;
+  padding: 50px 20px 70px 20px;
 }
 
 .contact{
   background-color: #222;
-  padding:20px;
+  padding: 50px 20px 70px 20px;
   color: #eee;
 }
 
 .resume{
   background-color: #eee;
-  padding: 20px;
+  padding: 50px 20px 70px 20px;
 }
 
 .portfolio-item{
-  margin: 20px 20px 20px 0px;
+  margin: 20px 5px 5px 0px;
   padding: 10px;
-  border: 1px white solid;
   overflow: hidden;
   float: left;
+}
+
+.portfolio{
+  font-family: basic;
+  font-size: 20px;
+  color: #000;
+  padding: 10px;
+  margin: 10px 0 0 0;
 }
 
 
@@ -376,7 +383,7 @@ textarea {
 }
 
 a {
-  color: inherit;
+  color: #bbb;
   text-decoration: none;
 }
 
@@ -571,6 +578,8 @@ h3,
 h4,
 .h4 {
   font-size: 18px;
+  font-family: basic;
+  margin: none;
 }
 
 h5,
@@ -4132,6 +4141,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   overflow-x: visible;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  background-color: #ddd;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -4427,7 +4437,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #666;
+  background-color: #ddd;
   display : table-row;
     vertical-align : bottom;
     height : 1px;
@@ -4450,12 +4460,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #fff;
+  font-family: pacifico;
+  font-size: 20px;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
+  color: #FF638C;
   background-color: transparent;
 }
 
